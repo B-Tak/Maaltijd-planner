@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "v/4QFpPvwDY/nKGvOQbpOEZ7qJ8ZNdb26BHwsPM+eZ8=",
+  "Hash": "bb5p8m8xcE/BI+FVgRlPSDxY4mAH6KK7/KZRI+WaA4I=",
   "Source": "Index",
   "BasePath": "_content/Index",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Index\\wwwroot",
       "Source": "Index",
-      "ContentRoot": "Z:\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\",
+      "ContentRoot": "\\\\192.168.178.161\\share1\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\",
       "BasePath": "_content/Index",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "Z:\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\css\\style.css",
+      "Identity": "\\\\192.168.178.161\\share1\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\css\\style.css",
       "SourceId": "Index",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\",
+      "ContentRoot": "\\\\192.168.178.161\\share1\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\",
       "BasePath": "_content/Index",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "Z:\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\js\\script.js",
+      "Identity": "\\\\192.168.178.161\\share1\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\js\\script.js",
       "SourceId": "Index",
       "SourceType": "Discovered",
-      "ContentRoot": "Z:\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\",
+      "ContentRoot": "\\\\192.168.178.161\\share1\\Workspace\\dev\\csharp\\Maaltijd-planner\\wwwroot\\",
       "BasePath": "_content/Index",
       "RelativePath": "js/script.js",
       "AssetKind": "All",

@@ -1,4 +1,6 @@
 ﻿@page
+@model MaaltijdPlanner.IndexModel
+@using MaaltijdPlanner;
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +24,7 @@
                 <h3>Maaltijd Planner</h3>
             </section>
             <section>
-                <h3>Vandaag</h3>
+                <h3>Vandaag is het: @IndexModel.GetDay()</h3>
             </section>
             <section>
                 <h3>Plannen?</h3>
