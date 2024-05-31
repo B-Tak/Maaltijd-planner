@@ -39,6 +39,7 @@ section {
     border: 1px solid #715F5F;
     border-radius: 32px;
     color: #F9E7E7;
+    box-shadow:8px 23px 28px darkgrey;
 }
 
 ul {
