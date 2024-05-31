@@ -12,4 +12,9 @@ public class IndexModel
         string dutchDayName = dutch.DateTimeFormat.GetDayName(today);
         return dutchDayName;
     }
+    public static string GetDailyMeal()
+    {
+        string placeholder = "First have to setup the weekly meal system";
+        return placeholder;
+    }
 }
