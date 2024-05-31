@@ -2,7 +2,7 @@
 CREATE DATABASE maaltijd_planner;
 
 -- Connect to the new database
-\c maaltijd_planner
+USE maaltijd_planner;
 
 -- Create the recipes table
 CREATE TABLE recipes (
