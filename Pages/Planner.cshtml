@@ -1,5 +1,5 @@
-﻿@page
-@model MaaltijdPlanner.IndexModel
+@page
+@model MaaltijdPlanner.PlannerModel
 @using MaaltijdPlanner;
 <!DOCTYPE html>
 <html lang="en">
@@ -21,16 +21,12 @@
             <ul>Icon</ul>
         </nav>
         <div class="content">
-            <section>
-                <h3>Maaltijd Planner</h3>
-            </section>
-            <section>
-                <h3>Vandaag is het: @IndexModel.GetDay()</h3>
-            </section>
-            <section>
-                <h3>Plannen?</h3>
-                <a href="/Planner">Week planning</a>
-            </section>
+            <form>
+          <p>Hoeveel dagen?</p>
+          <select>
+
+          </select>
+          </form>
         </div>
     </div>
 </body>

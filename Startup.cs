@@ -5,5 +5,6 @@ var app = builder.Build();
 app.MapRazorPages();
 app.UseDefaultFiles();
 app.UseStaticFiles();
+
 app.Run();
 
