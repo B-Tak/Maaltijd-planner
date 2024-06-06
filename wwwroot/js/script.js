@@ -8,9 +8,9 @@ document.getElementById('daysSelect').addEventListener('change', function ()
     let i = 0;
     while (i < numberOfDays)
     {
-        const p = document.createElement('p');
-        p.textContent = 'Lorem';
-        loremContainer.appendChild(p);
-        i++;
+            const div = document.createElement('div');
+            div.setAttribute('class', 'Selectorbox');
+            loremContainer.appendChild(div);
+            i++;
     }
 });
