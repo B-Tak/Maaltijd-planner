@@ -63,3 +63,9 @@ ul {
     height: 200px;
     background-color:black;
 }
+
+.SelectorContainer{
+    display:grid;
+    grid-template-columns :repeat(5, auto);
+    justify-content:space-around;
+}

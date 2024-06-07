@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2024 at 12:39 PM
+-- Generation Time: Jun 07, 2024 at 10:53 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -70,17 +70,24 @@ CREATE TABLE `recipes` (
   `image` varchar(255) DEFAULT NULL,
   `ingredients` text DEFAULT NULL,
   `description` text DEFAULT NULL,
-  `preparation_method` text DEFAULT NULL
+  `preparation_method` text DEFAULT NULL,
+  `Fish` tinyint(1) NOT NULL,
+  `Vegetables` tinyint(1) NOT NULL,
+  `Vegan` tinyint(1) NOT NULL,
+  `Unhealthy` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `recipes`
 --
 
-INSERT INTO `recipes` (`id`, `user_id`, `title`, `image`, `ingredients`, `description`, `preparation_method`) VALUES
-(1, 1, 'Test Recipe', 'http://example.com/image.jpg', '1 cup flour, 2 eggs, 1/2 cup milk', 'A simple test recipe.', '1. Mix ingredients. 2. Cook for 20 minutes.'),
-(2, 1, 'Chocolate Cake', 'http://example.com/chocolate_cake.jpg', '2 cups flour, 1 cup sugar, 1 cup cocoa powder, 3 eggs, 1 cup milk', 'A rich and moist chocolate cake.', '1. Preheat oven to 350°F. 2. Mix dry ingredients. 3. Add eggs and milk. 4. Bake for 30-35 minutes.'),
-(3, 1, 'Caesar Salad', 'http://example.com/caesar_salad.jpg', '1 head romaine lettuce, 1/2 cup Caesar dressing, 1 cup croutons, 1/4 cup grated Parmesan cheese', 'A classic Caesar salad.', '1. Chop lettuce. 2. Toss with dressing, croutons, and cheese. 3. Serve immediately.');
+INSERT INTO `recipes` (`id`, `user_id`, `title`, `image`, `ingredients`, `description`, `preparation_method`, `Fish`, `Vegetables`, `Vegan`, `Unhealthy`) VALUES
+(1, 1, 'Test Recipe', 'http://example.com/image.jpg', '1 cup flour, 2 eggs, 1/2 cup milk', 'A simple test recipe.', '1. Mix ingredients. 2. Cook for 20 minutes.', 0, 0, 0, 0),
+(2, 1, 'Chocolate Cake', 'http://example.com/chocolate_cake.jpg', '2 cups flour, 1 cup sugar, 1 cup cocoa powder, 3 eggs, 1 cup milk', 'A rich and moist chocolate cake.', '1. Preheat oven to 350°F. 2. Mix dry ingredients. 3. Add eggs and milk. 4. Bake for 30-35 minutes.', 0, 0, 0, 0),
+(3, 1, 'Caesar Salad', 'http://example.com/caesar_salad.jpg', '1 head romaine lettuce, 1/2 cup Caesar dressing, 1 cup croutons, 1/4 cup grated Parmesan cheese', 'A classic Caesar salad.', '1. Chop lettuce. 2. Toss with dressing, croutons, and cheese. 3. Serve immediately.', 0, 0, 0, 0),
+(4, 1, 'Test Recipe', 'http://example.com/image.jpg', '1 cup flour, 2 eggs, 1/2 cup milk', 'A simple test recipe.', '1. Mix ingredients. 2. Cook for 20 minutes.', 0, 0, 0, 1),
+(5, 1, 'Chocolate Cake', 'http://example.com/chocolate_cake.jpg', '2 cups flour, 1 cup sugar, 1 cup cocoa powder, 3 eggs, 1 cup milk', 'A rich and moist chocolate cake.', '1. Preheat oven to 350°F. 2. Mix dry ingredients. 3. Add eggs and milk. 4. Bake for 30-35 minutes.', 0, 0, 0, 1),
+(6, 1, 'Caesar Salad', 'http://example.com/caesar_salad.jpg', '1 head romaine lettuce, 1/2 cup Caesar dressing, 1 cup croutons, 1/4 cup grated Parmesan cheese', 'A classic Caesar salad.', '1. Chop lettuce. 2. Toss with dressing, croutons, and cheese. 3. Serve immediately.', 0, 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -155,7 +162,7 @@ ALTER TABLE `inventory`
 -- AUTO_INCREMENT for table `recipes`
 --
 ALTER TABLE `recipes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `user`
