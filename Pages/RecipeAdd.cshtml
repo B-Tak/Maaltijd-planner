@@ -1,0 +1,57 @@
+﻿@page
+@model MaaltijdPlanner.RecipeAdd
+@using MaaltijdPlanner;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maaltijdplanner</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+    <div class="formatbody">
+        <nav>
+            <ul><a href="/Index">Home</a></ul>
+            <ul><a href="/Recepten">Recepten</a></ul>
+            <ul>Icon</ul>
+            <ul>Icon</ul>
+            <ul>Icon</ul>
+            <ul>Icon</ul>
+            <ul>Icon</ul>
+        </nav>
+        <div class="content">
+           <section>
+              <form action="Recepten.cshtml" method="post" class="RecipeAdd">
+    <label for="title">Recipe Name</label>
+    <input type="text" id="title" name="title"/>
+
+    <label for="ingredients">Ingredients</label>
+    <input type="text" id="ingredients" name="ingredients"/>
+
+    <label for="preparation_method">Bereidingswijze</label>
+    <input type="text" id="preparation_method" name="preparation_method"/>
+
+    <label for="description">Beschrijving</label>
+    <input type="text" id="description" name="description"/>
+
+    <div class="type-eten">
+        <label>Type Eten</label>
+        <div class="radio-options">
+            <input type="radio" id="type1" name="type_eten" value="option1"/>
+            <label for="type1">Vis</label>
+            <input type="radio" id="type2" name="type_eten" value="option2"/>
+            <label for="type2">AVG</label>
+            <input type="radio" id="type4" name="type_eten" value="option3"/>
+            <label for="type3">Ongezond</label>
+            <input type="radio" id="type3" name="type_eten" value="option4"/>
+            <label for="type4">Vegan</label>
+        </div>
+            <input type="submit" />
+    </div>
+</form>
+           </section>
+        </div>
+    </div>
+</body>
+</html>
