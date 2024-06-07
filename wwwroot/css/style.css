@@ -46,6 +46,11 @@ section {
     margin-left: 10%;
 }
 
+.RecipeAdd {
+    display: grid;
+    grid-column:1;
+}
+
 section:nth-child(2){
     height:26%;
     align-self:baseline;
