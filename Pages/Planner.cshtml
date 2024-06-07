@@ -3,12 +3,14 @@
 @using MaaltijdPlanner;
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Maaltijdplanner</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js" defer></script>
 </head>
+
 <body>
     <div class="formatbody">
         <nav>
@@ -24,7 +26,7 @@
             <section>
                 <form method="post">
                     <p>Hoeveel dagen?</p>
-                    <select id="daysSelect">
+                    <select name="days" id="daysSelect">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -33,78 +35,79 @@
                         <option value="6">6</option>
                         <option value="7">7</option>
                     </select>
+                    <div id="SelectorContainer" class="SelectorContainer">
+                        <div class="Selectorbox">
+                            <p>Willekeurige recepten</p>
+                            <select name="random" id="Random">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                        <div class="Selectorbox">
+                            <p>Vis Recepten</p>
+                            <select name="vis" id="Vis">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                        <div class="Selectorbox">
+                            <p>AVG Recepten</p>
+                            <select name="avg" id="AVG">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                        <div class="Selectorbox">
+                            <p>Ongezonden Recepten</p>
+                            <select name="ongezond" id="Ongezond">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                        <div class="Selectorbox">
+                            <p>Veganistische Recepten</p>
+                            <select name="vegan" id="Vegan">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="ok">
                 </form>
-                <div id="SelectorContainer" class="SelectorContainer">
-                   <div class="Selectorbox">
-                       <p>Willekeurige recepten</p>
-                       <select id="Random">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                       </select>
-                   </div>
-                   <div class="Selectorbox">
-                       <p>Vis Recepten</p>
-                       <select id="Vis">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                       </select>
-                       </div>
-                   <div class="Selectorbox">
-                       <p>AVG Recepten</p>
-                       <select id="AVG">
-                            <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                       </select>
-                       </div>
-                   <div class="Selectorbox">
-                       <p>Ongezonden Recepten</p>
-                       <select id="Ongezond">
-                           <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                       </select>
-                   </div>
-                   <div class="Selectorbox">
-                       <p>Veganistische Recepten</p>
-                       <select id="Vegan">
-                           <option value="0">0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                       </select>
-                   </div>
-                </div>
-                <button type="button">Genereer</button>
             </section>
         </div>
         <p>@PlannerModel.GetWeeklyMeal()</p>
     </div>
 </body>
+
 </html>
