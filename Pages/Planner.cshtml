@@ -24,7 +24,8 @@
         </nav>
         <div class="content">
             <section>
-                <form method="post">
+                <form method="post" action="">
+                    @Html.AntiForgeryToken()
                     <p>Hoeveel dagen?</p>
                     <select asp-for="Days" id="daysSelect">
                         <option value="1">1</option>
@@ -38,7 +39,7 @@
                     <div id="SelectorContainer" class="SelectorContainer">
                         <div class="Selectorbox">
                             <p>Willekeurige recepten</p>
-                            <select asp-for="Random" id="Random">
+                            <select asp-for="Random" id="Random" name="Random">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -51,7 +52,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>Vis Recepten</p>
-                            <select asp-for="Vis" id="Vis">
+                            <select asp-for="Vis" id="Vis" name="Vis">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -64,7 +65,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>AVG Recepten</p>
-                            <select asp-for="Avg" id="AVG">
+                            <select asp-for="Avg" id="AVG" name="Avg">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -77,7 +78,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>Ongezonden Recepten</p>
-                            <select asp-for="Ongezond" id="Ongezond">
+                            <select asp-for="Ongezond" id="Ongezond" name="Ongezond">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -90,7 +91,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>Veganistische Recepten</p>
-                            <select asp-for="Vegan" id="Vegan">
+                            <select asp-for="Vegan" id="Vegan" name="Vegan">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -106,7 +107,7 @@
                 </form>
             </section>
             <section>
-            
+                <p>Vis: @Model.Vis</p>
             </section>
         </div>
     </div>
