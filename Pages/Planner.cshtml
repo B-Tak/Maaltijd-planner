@@ -1,6 +1,6 @@
 @page
 @model MaaltijdPlanner.PlannerModel
-@using MaaltijdPlanner;
+@using MaaltijdPlanner
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +26,7 @@
             <section>
                 <form method="post">
                     <p>Hoeveel dagen?</p>
-                    <select name="days" id="daysSelect">
+                    <select asp-for="Days" id="daysSelect">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -38,7 +38,7 @@
                     <div id="SelectorContainer" class="SelectorContainer">
                         <div class="Selectorbox">
                             <p>Willekeurige recepten</p>
-                            <select name="random" id="Random">
+                            <select asp-for="Random" id="Random">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>Vis Recepten</p>
-                            <select name="vis" id="Vis">
+                            <select asp-for="Vis" id="Vis">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -64,7 +64,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>AVG Recepten</p>
-                            <select name="avg" id="AVG">
+                            <select asp-for="Avg" id="AVG">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -77,7 +77,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>Ongezonden Recepten</p>
-                            <select name="ongezond" id="Ongezond">
+                            <select asp-for="Ongezond" id="Ongezond">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="Selectorbox">
                             <p>Veganistische Recepten</p>
-                            <select name="vegan" id="Vegan">
+                            <select asp-for="Vegan" id="Vegan">
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -106,7 +106,7 @@
                 </form>
             </section>
             <section>
-        <p>@PlannerModel.GetWeeklyMeal()</p>
+            
             </section>
         </div>
     </div>
