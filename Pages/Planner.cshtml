@@ -1,6 +1,10 @@
 @page
+@using System.Data
 @model MaaltijdPlanner.PlannerModel
-@using MaaltijdPlanner
+@{
+    ViewData["Title"] = "Weekly Meal Planner";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,11 +110,10 @@
                     <input type="submit" value="ok">
                 </form>
             </section>
-            <section>
-                <p>Vis: @Model.Vis</p>
+            <section id="weeklyMealsSection">
+                <ul>@Model.GetWeeklyMeal()</ul>
             </section>
         </div>
     </div>
 </body>
-
 </html>

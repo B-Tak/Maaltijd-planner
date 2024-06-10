@@ -74,3 +74,11 @@ ul {
     grid-template-columns :repeat(5, auto);
     justify-content:space-around;
 }
+
+#weeklyMealsSection {
+    display: none;
+}
+
+#weeklyMealsSection:target {
+    display: block;
+}
