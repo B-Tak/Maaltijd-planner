@@ -46,6 +46,12 @@ section {
     margin-left: 10%;
 }
 
+.plannen {
+    width: 40%;
+    height: 60%;
+    margin: auto;
+}
+
 section > a {
     text-decoration: none;
     background-color: #A1DD70;
