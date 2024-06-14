@@ -46,6 +46,16 @@ section {
     margin-left: 10%;
 }
 
+section > a {
+    text-decoration: none;
+    background-color: #A1DD70;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+}
+
 .RecipeAdd {
     display: grid;
     grid-column: 1;
