@@ -18,11 +18,11 @@ nav {
     height: 100vh;
 }
 
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 .content {
     display: grid;
@@ -34,10 +34,10 @@ nav {
 }
 
 section {
-    text-align:center;
-    display:grid;
+    text-align: center;
+    display: grid;
     width: 80%;
-    height:100%;
+    height: 100%;
     background-color: #8E8787;
     border: 1px solid #715F5F;
     border-radius: 32px;
@@ -48,15 +48,15 @@ section {
 
 .RecipeAdd {
     display: grid;
-    grid-column:1;
+    grid-column: 1;
 }
 
-section:nth-child(2){
-    height:26%;
-    align-self:baseline;
-    text-align:center;
-    margin-left:44%;
-    width:10%;
+section:nth-child(2) {
+    height: 26%;
+    align-self: baseline;
+    text-align: center;
+    margin-left: 44%;
+    width: 10%;
 }
 
 ul {
@@ -66,13 +66,13 @@ ul {
 .Selectorbox {
     width: 200px;
     height: 200px;
-    background-color:black;
+    background-color: black;
 }
 
-.SelectorContainer{
-    display:grid;
-    grid-template-columns :repeat(5, auto);
-    justify-content:space-around;
+.SelectorContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-around;
 }
 
 #weeklyMealsSection {
